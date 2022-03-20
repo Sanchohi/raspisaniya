@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <table class="tab" border="1">
+        <form class="perviy">
+            
+            <td border="0" class="text">
+            
+            <input type="text" name="q" value="{{f}}" placeholder="English...">
+            
+            <button class="butt" type="submit" >перевести</button>
+            
+            <input type="text" class="perev" value="{{e}}" placeholder="Ozbek..."></td>
+            
+            <td border="0" class="rasp" colspan="3">Расписание</td>
+            {% if user.is_authenticated %}
+            <td border="0" class="but"><a class="regist">Salom:{{user.username}}</a>|<a href="{% url 'logout' %}" class="regist">LogOut</a></td>
+            {% else %}
+            <td border="0" class="but"><a href="{% url 'login' %}" class="regist">LogIN</a></td>
+            {% endif %}
+        </form>
+        
+        <tr>
+            <th class='ras' colspan="1" rowspan="6">
+                {% for i in a %}
+
+                <table class="sam" border="none">
+                    <tr>
+                        {% if i.pk  == d %}
+                        <th bgcolor="blue" style="color: white">{{i.name}}</th>
+                        {% else %}
+                        <th ><a href="{% url 'cat' i.pk %}">{{i.name}}</a></th>
+                        {% endif %}
+                    </tr>
+                </table>
+                {% endfor %}
+            </th>
+            <th class='ras' colspan="4" rowspan="6">
+                <table class="tab1" border="none">
+                    {% if d == 0 %}
+                    <tr>
+                        <th>Raspisaniya Saytiga hush kelibsiz</th>
+                    </tr>
+                    {% else %}
+                    {% for c in b %}
+                    {% if c.raqam == 0 %}
+                    <tr>
+                        <th>{{c.title}}</th>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <th>{{c.raqam}}</th>
+                        <th>{{c.title}}</th>
+                        <th>{{c.xona}}</th>
+                    </tr>
+                    {% endif%}
+                    {% endfor %}  
+                    {% endif %}  
+                </table>
+            </th>
+        </tr>   
+           
+        
+
+        
+    </table>
+    
+
+    <script src="app.js"></script>
+    <script src="query.js"></script>
+{% endblock %}

@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-decoration: none;
+    /* border-radius: 10px; */
+}
+
+body {
+    background-image: url(учебныйфон.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+
+.rasp {
+    font-size: 28px;
+    border: 0;
+    font-weight: 700;
+    padding-right: 220px;
+}
+
+.regist {
+    padding: 10px 17px;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 13px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.regist:hover {
+    color: skyblue;
+}
+
+table {
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.tab {
+    margin-left: 200px;
+    width: 900px;
+    height: 560px;
+}
+
+.but {
+    width: 100px;
+    border: none;
+}
+
+tr {
+    border: none;
+}
+
+.ras {
+    font-size: 22px;
+}
+
+.tab1 {
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.sam{
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    height: 16.5%;
+
+}
+
+.nedelya a {
+    
+    font-size: 18px;
+    color: black;
+}
+
+.nedelya a:hover {
+    color: blue;
+}
+
+input {
+    width: 30%;
+    padding: 4px;
+    border-radius: 7px;
+}
+
+.text {
+    border: 0;
+    padding-left: 20px;
+}
+
+button.butt {
+    display: inline-block;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: blue;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    margin: 0 8px;
+}
+
+#contact-form {
+    height: 100vh;
+}
+
+#contact-form .container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#contact-form .container h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: orange;
+    text-transform: uppercase;
+    font-family: monospace;
+    margin: 17px 0 14px 0;
+}
+
+#contact-form .container h1 span {
+    color: blue;
+    font-family: monospace;
+}
+
+#contact-form .container p {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#contact-form .container .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form .container .form-group label {
+    display: block;
+    margin: 5px 0;
+    color: black;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 200%;
+    color: black;
+    font-size: 20px;
+    padding: 13px;
+    border: 1px solid rgb(104, 102, 102);
+}
+
+#contact-form .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: rgb(68, 67, 67);
+    color: white;
+    margin: 5px 0 17px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.logo {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8.5px 8px;
+    border-radius: 7px;
+    margin-left: 6px;
+}
+
+.onas {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: flex-end;
+    width: 1200px;
+
+    padding: 10px;
+}
+
+
+
+.onas .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.about{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.about .container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.about .container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+} 
+
+
+  .about .container .aboutus h1{
+    font-size: 35px;
+    padding-bottom: 43px;
+  }
+
+  .about .container .aboutus p {
+    font-size: 23px;
+
+  }
+
+  .about .container .aboutus{
+    margin-left: 26px;
+  }
+
+  .bu a{
+     display: inline-block;
+     padding: 12px;
+     background-color: blue;
+     text-decoration: none;
+     color: white;
+     font-size:15px;
+     border-radius: 10px;
+   }
+
+   .nazad {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   }

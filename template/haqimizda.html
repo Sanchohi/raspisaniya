@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+	{% for i in a %}
+   <div class="about">
+   	
+   	<div class="container">
+   		
+   		{% if i.rasm %}
+   		<img src="{{i.rasm.url}}" alt="">
+   		{% endif %}
+   		<div class="aboutus">
+   		  <h1>{{i.name}}</h1>
+   		  <p>{{i.about|truncatewords:10 }}</p>
+   		</div>
+   		
+   			<div class="bu">
+   			  <a href="{% url 'oqi' i.pk %}">Читать</a>
+   		    </div>
+   		   
+   	</div>
+        <div class="nazad"> 
+           <div class="bu">
+   		  	  <a href="{% url 'home' %}">НАЗАД</a>
+   	       </div>
+     	</div>
+  </div>
+{% endfor%}
+{% endblock %}
